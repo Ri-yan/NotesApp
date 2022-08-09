@@ -59,4 +59,7 @@ const CardBody = styled.div`
     outline: none;
     border: none;
   }
+@media screen and (max-width:480px){
+  max-width: -webkit-fill-available;
+}
 `
