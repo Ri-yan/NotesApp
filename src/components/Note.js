@@ -35,7 +35,7 @@ const Note = (props) => {
       <textarea placeholder='Notes.....' className='text_area' onChange={(e)=>updateText(e.target.value,props.note.id)} defaultValue={props.note.text} name="" id="" cols="30" rows="10"></textarea>
       <div className="d-flex justify-content-between">
           <small>{formatDate(props.note.time)}</small>
-          <i role="button" onClick={()=>props.deleteNote(props.note.id)} className="bi bi-trash"></i>
+          <i title='delete note' role="button" onClick={()=>props.deleteNote(props.note.id)} className="bi bi-trash delete"></i>
       </div>
     </CardBody>
   )
@@ -49,6 +49,7 @@ const CardBody = styled.div`
   flex-direction: column;
   /* background:blueviolet; */
   border-radius: 30px;
+  transition: 1s;
   
   .text_area{
     flex: 1;
