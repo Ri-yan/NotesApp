@@ -28,8 +28,9 @@ const TitleBar = (props) => {
 export default TitleBar;
 const Title = styled.div`
 .titlebar{
-  font-family: "McLaren", cursive;
+  font-family: "McLaren", cursive !important;
   color: white;
   padding-left: 25px !important;
+  font-size: 1.5em !important;
 }
 `
