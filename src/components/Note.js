@@ -31,7 +31,7 @@ const Note = (props) => {
   }
   return (
     <CardBody style={{background:`${props.note.color}`}}>
-      <textarea style={{flex:'inherit',height:'30px'}} className='text_area' placeholder='Title' onChange={(e)=>updateTitle(e.target.value,props.note.id)} defaultValue={props.note.title} name="" id="" cols="30" rows="10"></textarea>
+      <textarea style={{flex:'inherit',height:'30px',fontWeight:'600'}} className='text_area' placeholder='Title' onChange={(e)=>updateTitle(e.target.value,props.note.id)} defaultValue={props.note.title} name="" id="" cols="30" rows="10"></textarea>
       <textarea placeholder='Notes.....' className='text_area' onChange={(e)=>updateText(e.target.value,props.note.id)} defaultValue={props.note.text} name="" id="" cols="30" rows="10"></textarea>
       <div className="d-flex justify-content-between">
           <small>{formatDate(props.note.time)}</small>

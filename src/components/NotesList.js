@@ -31,6 +31,7 @@ flex-wrap: wrap;
 gap: 30px;
 overflow: scroll;
 margin: 20px;
+justify-content: center;
 @media screen and (max-width:940px){
   justify-content: center;
 }
